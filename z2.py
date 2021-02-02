@@ -5,7 +5,7 @@ app=Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
-@app.route('/user/<username>')
+
 def show_user_profile(username):
     return render_template('user.html',name=username)
 
